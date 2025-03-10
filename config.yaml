@@ -1,4 +1,6 @@
-mysql_host: 'localhost'
-mysql_user: 'root'
-mysql_password: 'vikram'
-mysql_db: 'gym_management'
+services:
+  - type: web
+    name: flask-app
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://gym_management_e8ka_user:Vg6iFw6R3eM38IrjZzqaH2qjWYFbEeBz@dpg-cv7js9u0jms73e66mrg-a:5432/gym_management_e8ka
